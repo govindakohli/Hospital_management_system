@@ -1,0 +1,238 @@
+.help-page {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .help-hero {
+    background-color: #1b0772;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .help-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .help-hero p {
+    font-size: 1.5rem;
+  }
+  
+  .help-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .help-section {
+    margin-bottom: 40px;
+  }
+  
+  .help-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1b0772;
+    text-align: center;
+  }
+  
+  .faq-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+  
+  .faq-item .icon {
+    font-size: 1.8rem;
+    color: #1b0772;
+    margin-right: 10px;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .faq-item p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+  }
+  
+  .contact-support {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .support-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .support-item .icon {
+    font-size: 2.5rem;
+    color: #1b0772;
+    margin-bottom: 10px;
+  }
+  
+  .support-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .resources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .resource-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .resource-item .icon {
+    font-size: 2.5rem;
+    color: #1b0772;
+    margin-bottom: 10px;
+  }
+  
+  .resource-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-support, .resources {
+      grid-template-columns: 1fr;
+    }
+    .help-page {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        line-height: 1.2;
+      }
+      
+      .help-hero {
+        background-color: #1b0772;
+        color: #fff;
+        text-align: center;
+        padding: 50px 15px;
+      }
+      
+      .help-hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+      }
+      
+      .help-hero p {
+        font-size: 1rem;
+      }
+      
+      .help-content {
+        padding: 35px 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .help-section {
+        margin-bottom: 35px;
+      }
+      
+      .help-section h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+        color: #1b0772;
+        text-align: center;
+      }
+      
+      .faq-item {
+        margin-bottom: 25px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+      }
+      
+      .faq-item .icon {
+        font-size: 1.5rem;
+        color: #1b0772;
+        margin-right: 8px;
+      }
+      
+      .faq-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+      }
+      
+      .faq-item p {
+        font-size: 1rem;
+        color: #555;
+        text-align: justify;
+      }
+      
+      .contact-support {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+      }
+      
+      .support-item {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+      }
+      
+      .support-item .icon {
+        font-size: 1.5rem;
+        color: #1b0772;
+        margin-bottom: 8px;
+      }
+      
+      .support-item h4 {
+        font-size: 1rem;
+        margin-bottom: 12px;
+      }
+      
+      .resources {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        margin-top: 15px;
+      }
+      
+      .resource-item {
+        text-align: center;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+      }
+      
+      .resource-item .icon {
+        font-size: 1.5rem;
+        color: #1b0772;
+        margin-bottom: 8px;
+      }
+      
+      .resource-item h4 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+      
+  }
+  

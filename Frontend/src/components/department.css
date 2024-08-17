@@ -1,0 +1,253 @@
+.departments-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .departments-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .departments-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1b0772;
+    animation: fadeInDown 1.5s ease-in-out;
+  }
+  
+  .departments-intro {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .departments-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .department-card {
+    /* flex: 1; */
+    max-width: 350px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInUp 1.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .department-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .department-icon {
+    font-size: 3rem;
+    color: #1b0772;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .department-card:hover .department-icon {
+    color: #1888ff;
+  }
+  
+  .department-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .department-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .department-extra {
+    margin-top: 60px;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .department-extra h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #1b0772;
+  }
+  
+  .department-extra p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  .department-faq {
+    margin-top: 40px;
+  }
+  
+  .department-faq h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #1b0772;
+  }
+  
+  .department-faq p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+  }
+  
+  .department-faq strong {
+    color: #333;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .departments-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .departments-section {
+      padding: 60px 20px;
+      background-color: #f4f4f4;
+    }
+    
+    .departments-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .departments-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 15px;
+      color: #1b0772;
+      animation: fadeInDown 1.5s ease-in-out;
+    }
+    
+    .departments-intro {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 35px;
+      color: #333;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    
+    .departments-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: space-around;
+    }
+    
+    .department-card {
+      /* flex: 1; */
+      max-width: 350px;
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      animation: fadeInUp 1.5s ease-in-out;
+      text-align: center;
+    }
+    
+    .department-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .department-icon {
+      font-size: 2rem;
+      color: #1b0772;
+      margin-bottom: 15px;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .department-card:hover .department-icon {
+      color: #1888ff;
+    }
+    
+    .department-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    
+    .department-card p {
+      font-size: 1rem;
+      line-height: 1.2;
+      color: #666;
+    }
+    
+    .department-extra {
+      margin-top: 50px;
+      padding: 35px 15px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    
+    .department-extra h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #1b0772;
+    }
+    
+    .department-extra p {
+      font-size: 1rem;
+      color: #666;
+      line-height: 1.8;
+    }
+    
+    .department-faq {
+      margin-top: 35px;
+    }
+    
+    .department-faq h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #1b0772;
+    }
+    
+    .department-faq p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #666;
+    }
+  }
+  
