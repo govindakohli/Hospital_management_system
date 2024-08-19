@@ -5,7 +5,7 @@ const dbconnection = () =>{
         dbName:"HOSPITAL_MANAGEMENT_DATABASE"
     })
     .then(()=>console.log("Mongodb connected successful"))
-    .catch((err)=>confirm.log(`some error occured while connecting database ${err}`))
+    .catch((err)=>console.log(`some error occured while connecting database ${err}`))
 }
 
 export default dbconnection ;
