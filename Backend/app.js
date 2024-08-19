@@ -11,11 +11,18 @@ import AppointmentRouter from "./Router/appointmentRouter.js"
 const app = express()
 config({path: "./config/.env"})
 
+// app.use(cors({
+//     origin:[process.env.FRONTEND_URL , process.env.DASHBOARD_URL],
+//     methods:["GET" , "PUT" , "DELETE" , "POST"],
+//     credentials:true
+// }))
+
 app.use(cors({
-    origin:[process.env.FRONTEND_URL , process.env.DASHBOARD_URL],
-    methods:["GET" , "PUT" , "DELETE" , "POST"],
-    credentials:true
-}))
+    origin: [process.env.FRONTEND_URL, process.env.BACKEND_PART_URL],
+    methods: ["GET", "PUT", "DELETE", "POST"],
+    credentials: true
+}));
+
 app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
