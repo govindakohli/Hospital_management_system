@@ -23,7 +23,7 @@ function AddNewAdmin() {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/v1/user/admin/addnew",
+        "https://hospital-management-system-h9yz.onrender.com/api/v1/user/admin/addnew",
         {
           firstName,
           lastName,

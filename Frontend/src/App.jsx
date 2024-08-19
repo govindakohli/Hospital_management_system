@@ -30,7 +30,7 @@ function App() {
  useEffect(()=>{
    const fetchUser = async()=>{
     try {
-     const response =  await axios.get("http://localhost:5000/api/v1/user/patient/me",{withCredentials:true});
+     const response =  await axios.get("https://hospital-management-system-h9yz.onrender.com/api/v1/user/patient/me",{withCredentials:true});
      setIsAuthenticated(true);
      setUser(response.data.user)
     } catch (error) {
@@ -40,7 +40,7 @@ function App() {
    };
    const fetchAdmin = async()=>{
     try {
-     const response =  await axios.get("http://localhost:5000/api/v1/user/admin/me",{withCredentials:true});
+     const response =  await axios.get("https://hospital-management-system-h9yz.onrender.com/api/v1/user/admin/me",{withCredentials:true});
      setIsAuthenticated(true);
      setAdmin(response.data.user)
     } catch (error) {

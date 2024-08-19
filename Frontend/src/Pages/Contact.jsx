@@ -18,7 +18,7 @@ function Contact() {
     e.preventDefault();
     try {
       await axios.post(
-        "http://localhost:5000/api/v1/message/send",
+        "https://hospital-management-system-h9yz.onrender.com/api/v1/message/send",
         {
           firstName,
           lastName,

@@ -68,7 +68,7 @@ function AddNewDoctor() {
       formData.append("doctorDepartment", doctorDepartment);
       formData.append("docAvatar", docAvatar);
       const res = await axios.post(
-        "http://localhost:5000/api/v1/user/doctor/addnew",
+        "https://hospital-management-system-h9yz.onrender.com/api/v1/user/doctor/addnew",
         formData,
         {
           withCredentials: true,
