@@ -4,41 +4,20 @@ import {errorhandler} from "../middleware/errorMiddleware.js";
 import jwt from "jsonwebtoken"
 
 // Middleware to authenticate dashboard users
-export const isAdminAuthenticated = catchAsyncError(async (req, res, next) => {
+export const isAdminAuthenticated = catchAsyncError(async(req , res , next)=>{
     const token = req.cookies.adminToken;
-  
-    if (!token) {
-      return next(new errorhandler(`User not authenticated!`, 401));
+    if(!token){
+        return next(new errorhandler(`User not Authenticated!` , 400))
     }
-  
-    try {
-      const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
-      req.user = await User.findById(decoded.id);
-  
-      if (!req.user) {
-        return next(new errorhandler(`User not found!`, 404));
-      }
-  
-      if (req.user.role !== "Admin") {
+    const decoded = jwt.verify(token , process.env.JWT_SECRET_KEY)
+    req.user = await User.findById(decoded.id)
+    if (req.user.role !== "Admin") {
         return next(
-          new errorhandler(`Role ${req.user.role} not authorized for this resource!`, 403)
+          new errorhandler(`${req.user.role} not authorized for this resource!`, 403)
         );
-      }
-  
-      next();
-    } catch (error) {
-      if (error.name === "JsonWebTokenError") {
-        return next(new errorhandler(`Invalid token!`, 401));
-      }
-  
-      if (error.name === "TokenExpiredError") {
-        return next(new errorhandler(`Token expired!`, 401));
-      }
-  
-      return next(new errorhandler(`Authentication failed!`, 401));
     }
-  });
-  
+    next()
+})
 
 
 // middleware to autenticate frontend users
