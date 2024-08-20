@@ -46,7 +46,7 @@ function AllAppointment() {
   const handleUpdateStatus = async (appointmentId, status) => {
     try {
       const { data } = await axios.put(
-        `https://hospital-management-system-h9yz.onrender.com/api/v1/appointment//update/${appointmentId}`,
+        `https://hospital-management-system-h9yz.onrender.com/api/v1/appointment/update/${appointmentId}`,
         { status },
         { withCredentials: true }
       );
